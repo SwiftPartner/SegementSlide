@@ -11,7 +11,7 @@ open class TransparentSlideDefaultViewController: TransparentSlideViewController
     
     private let defaultSwitcherView = SegementSlideDefaultSwitcherView()
     
-    public override func segementSlideSwitcherView() -> SegementSlideSwitcherDelegate {
+    open override func segementSlideSwitcherView() -> SegementSlideSwitcherDelegate {
         defaultSwitcherView.delegate = self
         defaultSwitcherView.ssDataSource = self
         return defaultSwitcherView
